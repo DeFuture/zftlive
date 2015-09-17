@@ -1,0 +1,157 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+   <style name="TransparentTheme" parent="@android:style/Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <!-- Activity透明样式 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Note that we use the base animation style here (that is no
+             animations) because we really have no idea how this kind of
+             activity will be used. -->
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        
+        <!-- ActionBar样式 -->
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/ActionBarMenu</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>        
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/ActionBarMenu</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+
+        	<!-- HOLO Theme Action bar styles -->
+<!--         <item name="actionDropDownStyle">@android:style/Widget.Holo.Spinner.DropDown.ActionBar</item> -->
+<!--         <item name="actionButtonStyle">@android:style/Widget.Holo.ActionButton</item> -->
+<!--         <item name="actionOverflowButtonStyle">@android:style/Widget.Holo.ActionButton.Overflow</item> -->
+<!--         <item name="actionModeBackground">@android:drawable/cab_background_top_holo_dark</item> -->
+<!--         <item name="actionModeSplitBackground">@android:drawable/cab_background_bottom_holo_dark</item> -->
+<!--         <item name="actionModeCloseDrawable">@android:drawable/ic_cab_done_holo_dark</item> -->
+<!--         <item name="actionBarTabStyle">@style/Widget.Holo.ActionBar.TabView</item> -->
+<!--         <item name="actionBarTabBarStyle">@style/Widget.Holo.ActionBar.TabBar</item> -->
+<!--         <item name="actionBarTabTextStyle">@style/Widget.Holo.ActionBar.TabText</item> -->
+<!--         <item name="actionModeStyle">@style/Widget.Holo.ActionMode</item> -->
+<!--         <item name="actionModeCloseButtonStyle">@style/Widget.Holo.ActionButton.CloseMode</item> -->
+<!--         <item name="actionBarStyle">@android:style/Widget.Holo.ActionBar</item> -->
+<!--         <item name="actionBarSize">@dimen/action_bar_default_height</item> -->
+<!--         <item name="actionModePopupWindowStyle">@android:style/Widget.Holo.PopupWindow.ActionMode</item> -->
+<!--         <item name="actionBarWidgetTheme">@null</item> -->
+<!--         <item name="actionModeCutDrawable">@android:drawable/ic_menu_cut_holo_dark</item> -->
+<!--         <item name="actionModeCopyDrawable">@android:drawable/ic_menu_copy_holo_dark</item> -->
+<!--         <item name="actionModePasteDrawable">@android:drawable/ic_menu_paste_holo_dark</item> -->
+<!--         <item name="actionModeSelectAllDrawable">@android:drawable/ic_menu_selectall_holo_dark</item> -->
+<!--         <item name="actionModeShareDrawable">@android:drawable/ic_menu_share_holo_dark</item> -->
+<!--         <item name="actionModeFindDrawable">@android:drawable/ic_menu_find_holo_dark</item> -->
+<!--         <item name="actionModeWebSearchDrawable">@android:drawable/ic_menu_search_holo_dark</item> -->
+<!--         <item name="dividerVertical">?android:attr/listDivider</item> -->
+<!--         <item name="dividerHorizontal">?android:attr/listDivider</item> -->
+<!--         <item name="buttonBarStyle">@android:style/Holo.ButtonBar</item> -->
+<!--         <item name="buttonBarButtonStyle">?android:attr/borderlessButtonStyle</item> -->
+<!--         <item name="segmentedButtonStyle">@android:style/Holo.SegmentedButton</item> -->
+    
+    <style name="CustomActionBar" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+        <item name="android:background">@color/actionbar_bg</item>
+        <item name="android:subtitleTextStyle">@style/ActionBarSubtitle</item>
+        <item name="android:selectableItemBackground">@drawable/ad_selectable_background</item>
+        <item name="android:actionButtonStyle">@style/ActionBarActionButtonStyle</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabTextStyle</item>
+        <item name="android:actionDropDownStyle">@style/ActionBarDropDownNav</item>
+        <item name="android:dropDownListViewStyle">@style/ActionBarDropDownListView</item>
+    </style>
+
+    <!-- ActionBar菜单文字样式 -->
+    <style name="ActionBarMenu" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- ActionBar标题的样式 -->
+    <style name="ActionBarTitle" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- ActionBar自定义中间标题的样式 -->
+    <style name="ActionBarCenterTitle" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- ActionBar副标题的样式 -->
+    <style name="ActionBarSubtitle" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- ActionBar操作项元素的样式 -->
+    <style name="ActionBarActionButtonStyle" parent="@android:style/Widget.Holo.ActionButton">
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+    </style>
+    
+    <!-- ActionBarTab选项标签的样式 -->
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_bg</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingRight">22dp</item>
+    </style>
+
+    <!-- Tab选项标签字体的样式 -->
+    <style name="ActionBarTabTextStyle" parent="@android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- ActionBar下拉导航外部按钮的样式 -->
+    <style name="ActionBarDropDownNav" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/ad_spinner_background_holo_light</item>
+        <item name="android:popupBackground">@drawable/ad_menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/ad_selectable_background</item>
+    </style>
+
+    <!-- ActionBar下拉导航内部按钮的样式 -->
+    <style name="ActionBarDropDownListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/ad_selectable_background</item>
+    </style>
+
+    <!-- popupwindow 动画 -->
+    <style name="pop_animation">
+        <item name="android:windowEnterAnimation">@anim/pop_menu_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_menu_out_anim</item>
+    </style>
+
+    <style name="theme_fullScreen">
+
+        <!-- 设置无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置全屏 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

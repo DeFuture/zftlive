@@ -1,0 +1,455 @@
+{
+    "errorMsg": "",
+    "dataList": [
+        {
+            "id": "m10001",
+            "label": "首页",
+            "tipCount": "0",
+            "parentID": "m00000",
+            "icon": "menu_home",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "1",
+            "linkURL": "http://124.207.242.212:9080/jsp/mb/zxfb.jsp"
+        },
+        {
+            "id": "m10002",
+            "label": "最新发布",
+            "tipCount": "0",
+            "parentID": "m00000",
+            "icon": "menu_least",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "2",
+            "linkURL": "http://124.207.242.212:9080/jsp/mb/zxfb.jsp"
+        },
+        {
+            "id": "m10003",
+            "label": "重要业务提示",
+            "tipCount": "2",
+            "parentID": "m00000",
+            "icon": "menu_imporant",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "3",
+            "linkURL": "http://124.207.242.212:9080/jsp/mb/zyywts.jsp"
+        },
+        {
+            "id": "m10004",
+            "label": "公告通知",
+            "tipCount": "14",
+            "parentID": "m00000",
+            "icon": "menu_notice",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "4",
+            "linkURL": "http://124.207.242.212:9080/Channel/14165689"
+        },
+        {
+            "id": "m10005",
+            "label": "发行快报",
+            "tipCount": "0",
+            "parentID": "m00000",
+            "icon": "menu_fast",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "5",
+            "linkURL": "http://124.207.242.212:9080/jsp/mb/fxkb.jsp"
+        },
+        {
+            "id": "m10006",
+            "label": "发行信息披露",
+            "tipCount": "212",
+            "parentID": "m00000",
+            "icon": "menu_publish",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "parms": "",
+            "orderNo": "6",
+            "linkURL": "http://124.207.242.212:9080/Channel/14166039"
+        },
+        {
+            "id": "m20001",
+            "label": "国债",
+            "tipCount": "33",
+            "parentID": "m10006",
+            "icon": "menu_point",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "7",
+            "linkURL": "http://124.207.242.212:9080/Channel/14168702"
+        },
+        {
+            "id": "m30001",
+            "label": "记账式附息",
+            "tipCount": "10",
+            "parentID": "m20001",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "8",
+            "linkURL": "http://124.207.242.212:9080/Channel/14170006"
+        },
+        {
+            "id": "m30002",
+            "label": "记账式贴现",
+            "tipCount": "10",
+            "parentID": "m20001",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "9",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169936"
+        },
+        {
+            "id": "m30003",
+            "label": "凭证式",
+            "tipCount": "13",
+            "parentID": "m20001",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "10",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169866"
+        },
+        {
+            "id": "m30004",
+            "label": "储蓄式",
+            "tipCount": "0",
+            "parentID": "m20001",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "11",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169796"
+        },
+        {
+            "id": "m30005",
+            "label": "特别国债",
+            "tipCount": "0",
+            "parentID": "m20001",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "12",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169726"
+        },
+        {
+            "id": "m20002",
+            "label": "央行票据",
+            "tipCount": "9",
+            "parentID": "m10006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "13",
+            "linkURL": "http://124.207.242.212:9080/Channel/14168772"
+        },
+        {
+            "id": "m20003",
+            "label": "地方政府债",
+            "tipCount": "0",
+            "parentID": "m10006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "14",
+            "linkURL": "http://124.207.242.212:9080/Channel/14168861"
+        },
+        {
+            "id": "m20004",
+            "label": "政策性银行债",
+            "tipCount": "30",
+            "parentID": "m10006",
+            "icon": "menu_point",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "15",
+            "linkURL": "http://124.207.242.212:9080/Channel/14168931"
+        },
+        {
+            "id": "m30006",
+            "label": "国家开发银行债",
+            "tipCount": "10",
+            "parentID": "m20004",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "16",
+            "linkURL": "http://124.207.242.212:9080/Channel/14253424"
+        },
+        {
+            "id": "m30007",
+            "label": "进出口银行债",
+            "tipCount": "10",
+            "parentID": "m20004",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "17",
+            "linkURL": "http://124.207.242.212:9080/Channel/14253354"
+        },
+        {
+            "id": "m30008",
+            "label": "农业发展银行债",
+            "tipCount": "10",
+            "parentID": "m20004",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "18",
+            "linkURL": "http://124.207.242.212:9080/Channel/14253284"
+        },
+        {
+            "id": "m20005",
+            "label": "企业债",
+            "tipCount": "10",
+            "parentID": "m10006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "19",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169001"
+        },
+        {
+            "id": "m20006",
+            "label": "短期融资劵",
+            "tipCount": "20",
+            "parentID": "m10006",
+            "icon": "menu_point",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "20",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169071"
+        },
+        {
+            "id": "m30009",
+            "label": "企业短融",
+            "tipCount": "10",
+            "parentID": "m20006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "21",
+            "linkURL": "http://124.207.242.212:9080/Channel/14256786"
+        },
+        {
+            "id": "m30010",
+            "label": "证券公司短融",
+            "tipCount": "10",
+            "parentID": "m20006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "22",
+            "linkURL": "http://124.207.242.212:9080/Channel/14256716"
+        },
+        {
+            "id": "m20007",
+            "label": "中期票据",
+            "tipCount": "10",
+            "parentID": "m10006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "23",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169141"
+        },
+        {
+            "id": "m20008",
+            "label": "商业银行债",
+            "tipCount": "30",
+            "parentID": "m10006",
+            "icon": "menu_point",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "24",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169211"
+        },
+        {
+            "id": "m30011",
+            "label": "普通债",
+            "tipCount": "10",
+            "parentID": "m20008",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "25",
+            "linkURL": "http://124.207.242.212:9080/Channel/14259312"
+        },
+        {
+            "id": "m30012",
+            "label": "次级债",
+            "tipCount": "10",
+            "parentID": "m20008",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "26",
+            "linkURL": "http://124.207.242.212:9080/Channel/14259242"
+        },
+        {
+            "id": "m30013",
+            "label": "混合债",
+            "tipCount": "10",
+            "parentID": "m20008",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "27",
+            "linkURL": "http://124.207.242.212:9080/Channel/14259172"
+        },
+        {
+            "id": "m20009",
+            "label": "资产支持证劵",
+            "tipCount": "20",
+            "parentID": "m10006",
+            "icon": "menu_point",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "28",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169281"
+        },
+        {
+            "id": "m30014",
+            "label": "ABS",
+            "tipCount": "10",
+            "parentID": "m20009",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "29",
+            "linkURL": "http://124.207.242.212:9080/Channel/14261704"
+        },
+        {
+            "id": "m30015",
+            "label": "MBS",
+            "tipCount": "10",
+            "parentID": "m20009",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "30",
+            "linkURL": "http://124.207.242.212:9080/Channel/14261774"
+        },
+        {
+            "id": "m20010",
+            "label": "非银行金融债",
+            "tipCount": "10",
+            "parentID": "m10006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "31",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169351"
+        },
+        {
+            "id": "m20011",
+            "label": "中小企业集合票据",
+            "tipCount": "10",
+            "parentID": "m10006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "32",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169440"
+        },
+        {
+            "id": "m20012",
+            "label": "国际机构债",
+            "tipCount": "10",
+            "parentID": "m10006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "33",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169510"
+        },
+        {
+            "id": "m20013",
+            "label": "政府支持机构债券",
+            "tipCount": "10",
+            "parentID": "m10006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "34",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169580"
+        },
+        {
+            "id": "m20014",
+            "label": "超短期融资劵",
+            "tipCount": "10",
+            "parentID": "m10006",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "35",
+            "linkURL": "http://124.207.242.212:9080/Channel/14169650"
+        },
+        {
+            "id": "m10007",
+            "label": "数据统计",
+            "tipCount": "1",
+            "parentID": "m00000",
+            "icon": "menu_data",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "36",
+            "linkURL": "http://124.207.242.212:9080/jsp/mb/sjtj.jsp"
+        },
+        {
+            "id": "m10008",
+            "label": "中债分析",
+            "tipCount": "4",
+            "parentID": "m00000",
+            "icon": "menu_anysis",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "37",
+            "linkURL": "http://124.207.242.212:9080/Channel/14166109"
+        },
+        {
+            "id": "m20015",
+            "label": "日评",
+            "tipCount": "0",
+            "parentID": "m10008",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "38",
+            "linkURL": "http://124.207.242.212:9080/Channel/14168333"
+        },
+        {
+            "id": "m20016",
+            "label": "信用分析报告",
+            "tipCount": "0",
+            "parentID": "m10008",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "39",
+            "linkURL": "http://124.207.242.212:9080/Channel/14166426"
+        },
+        {
+            "id": "m20017",
+            "label": "日报",
+            "tipCount": "1",
+            "parentID": "m10008",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "40",
+            "linkURL": "http://124.207.242.212:9080/Channel/14168403"
+        },
+        {
+            "id": "m20018",
+            "label": "周报",
+            "tipCount": "1",
+            "parentID": "m10008",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "41",
+            "linkURL": "http://124.207.242.212:9080/Channel/14168492"
+        },
+        {
+            "id": "m20019",
+            "label": "月报",
+            "tipCount": "1",
+            "parentID": "m10008",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "42",
+            "linkURL": "http://124.207.242.212:9080/Channel/14168562"
+        },
+        {
+            "id": "m20020",
+            "label": "年报",
+            "tipCount": "1",
+            "parentID": "m10008",
+            "icon": "",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "43",
+            "linkURL": "http://124.207.242.212:9080/Channel/14168632"
+        },
+        {
+            "id": "m10009",
+            "label": "财经新闻",
+            "tipCount": "6",
+            "parentID": "m00000",
+            "icon": "menu_news",
+            "path": "cn.com.hoonsoft.chinabound.MainActivity",
+            "orderNo": "44",
+            "linkURL": "http://124.207.242.212:9080/Channel/14165829"
+        }
+    ],
+    "isDialog ": "true",
+    "noticeList": [
+        {
+            "id": "14324040",
+            "title": "关于发行江西省2014年地方政府债券的通知",
+            "content": "关于发行江西省2014年地方政府债券有关事项的通知关于发行江西省年地方政府债券有关事项的通知关于发行江西省年地方政府债券有关事项的通知",
+            "publishDate": "2014-09-15"
+        }
+    ]
+}

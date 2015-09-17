@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/my_favorite_list_selector"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_publish_date"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:text="@string/list_publish_date"
+            android:textColor="@color/whiteGray"
+            android:textSize="@dimen/fav_list_item_date" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toLeftOf="@+id/btn_go"
+            android:layout_toRightOf="@+id/tv_publish_date"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/list_category"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/fav_list_item_category" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:singleLine="false"
+                android:lines="2"
+                android:text="@string/list_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fav_list_item_title" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/my_favorite_list_go_selector"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/right_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/item_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/del_icon_normal"
+            android:gravity="center"
+            android:text="@string/menu_delete"
+            android:textColor="@color/blur_bg" 
+            android:textSize="@dimen/fav_list_item_delete"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

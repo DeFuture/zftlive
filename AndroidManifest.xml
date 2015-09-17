@@ -1,0 +1,446 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zftlive.android"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- 屏幕兼容模式配置 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- SDK版本信息 -->
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+
+    <!-- 测试用例 -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Tests for zftlive"
+        android:targetPackage="com.zftlive.android" />
+
+    <!-- 配置权限清单（开始） -->
+    <!-- 访问账户Gmail列表权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 使用证书权限 -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 管理账户权限 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 验证账户权限 -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 连续广播权限 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 读写系统设置权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 调用照相机相关权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 发送短信权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 读送短信权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 写短信权限 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- 接收短信权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <permission
+        android:name="oem.permission.SENDMAIL"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <!-- Push service 运行需要的权限 -->
+    <!-- 开机启动权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 振动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!-- 禁用键盘锁权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 更改系统设置的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 访问闪光灯的权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 发送短信验证码的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- 统计SDK用的 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 配置权限清单（结束） -->
+
+    <application
+        android:name="com.zftlive.android.MApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 在本应用中导入需要使用的包，放在application里面activity外面 -->
+        <uses-library android:name="android.test.runner" />
+
+        <!-- 配置程序启动界面 -->
+        <activity
+            android:name=".Launcher"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 程序主界面 -->
+        <activity
+            android:name=".sample.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/MainActivity"
+            android:launchMode="singleTask"
+            android:logo="@drawable/ic_list_white_48dp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- android:windowSoftInputMode="adjustPan"   键盘就会覆盖屏幕 -->
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize"   屏幕整体上移 -->
+
+
+        <!-- 引导界面 -->
+        <activity
+            android:name=".common.GuideActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 意见反馈界面 -->
+        <activity
+            android:name=".common.FeedbackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 扫描二维码界面 -->
+        <activity
+            android:name=".zxing.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!-- 底部泡泡菜单 -->
+        <activity
+            android:name=".sample.popupwindow.PopDialogMenuActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/PopDialogMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 曲线图样例 -->
+        <activity
+            android:name=".sample.chart.LineChartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/LineChartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 异步加载列表图片样例 -->
+        <activity
+            android:name=".sample.image.ImageListviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/ImageListviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 调用摄像头拍照样例 -->
+        <activity
+            android:name=".sample.camera.CameraPictureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/CameraPictureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 数据库操作示例 -->
+        <activity
+            android:name=".sample.db.DBDemoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/DBDemoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 生成二维码/验证码示例 -->
+        <activity
+            android:name=".sample.zxing.ZxingGenBinActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/ZxingGenBinActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 扫描二维码/条形码示例 -->
+        <activity
+            android:name=".sample.zxing.ZxingSacnnerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/ZxingSacnnerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 调用webservice接口SOAP协议查看天气示例 -->
+        <activity
+            android:name=".sample.soap.ProviceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/SOAP"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sample.soap.CityActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".sample.soap.WeatherActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+
+        <!-- 发送手机短信验证码示例 -->
+        <activity
+            android:name=".sample.sms.PhoneValidateCodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/PhoneValidateCodeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 各种进度条示例 -->
+        <activity
+            android:name=".sample.progressbar.ProgressBarActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/ProgressBarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 自动获取表单数据示例 -->
+        <activity
+            android:name=".sample.data.AutoGainFormActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/AutoGainFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity过场动画示例 -->
+        <activity
+            android:name=".sample.animation.AnimationInActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/AnimationInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sample.animation.AnimationOutActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+
+        <!-- 发送短信/拦截示例 -->
+        <activity
+            android:name=".sample.sms.SMSOperationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/SMSOperationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 基本常用操作测试样例 -->
+        <activity
+            android:name=".sample.basic.BasicTestActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/BasicTestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- DrawerLayout侧滑菜单样例 -->
+        <activity
+            android:name=".sample.menu.DrawerLayoutActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/DrawerLayoutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 水平+垂直滚动+首行首列固定+翻页Listview样例 -->
+        <activity
+            android:name=".sample.fixed.HVScorllListviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/HVScorllListviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.zftlive.android.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!-- 静态注册短信广播接收器 -->
+        <receiver android:name=".sample.sms.SMSBroadcastReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.zdp.aseo.content.AseoZdpUpdateService" />
+		<activity
+            android:name="com.iflytek.voiceads.request.IFLYBrowser"
+            android:screenOrientation="portrait" />
+        <meta-data  android:name="IFLYTEK_APPKEY_AD" android:value="54fe544f"/>
+        <!-- 动态注册短信拦截Service http://blog.csdn.net/zhujunwang/article/details/7912829 -->
+        <!-- <service android:name=".sample.sms.SMSInterceptService" android:exported="false" android:permission="oem.permission.SENDMAIL" > -->
+        <!-- <intent-filter > -->
+        <!-- <action android:name="com.zftlive.android.sample.sms.service.SMSReceived" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+    </application>
+
+</manifest>

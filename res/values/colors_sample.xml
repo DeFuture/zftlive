@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ActionBar背景颜色 -->
+   <color name="actionbar_bg">#3ca0ec</color>
+   <color name="whiteGray">#ffC9CACB</color>
+   <!-- 滑动删除按钮背景色 -->
+   <color name="right_bg">#b40000</color>
+   <color name="blur_bg">#FFFAF0</color>
+</resources>

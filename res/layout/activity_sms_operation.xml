@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.zftlive.android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".sample.data.AutoGainFormActivity" >
+
+    <!-- 账号 -->
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_phonenumber"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_phonenumber"
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:id="@+id/et_phonenumber"
+            style="@style/accountEditText"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:hint="@string/et_phonenumber_hint"
+            android:inputType="phone"
+            android:background="@drawable/view_linnerlayout_border"
+            android:tag="phonenumber" />
+
+        <Button
+            android:id="@+id/btn_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/greenyellow"
+            android:text="@string/btn_choice" />
+    </LinearLayout>
+
+    <!-- 账号 -->
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_account"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_smscontent"
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tv_content"
+            android:inputType="textMultiLine"
+            android:background="@drawable/view_linnerlayout_border"
+            android:minLines="5"
+            android:tag="smscontent"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 提交表单 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="13dp" >
+
+        <Button
+            android:id="@+id/btn_send"
+            style="@style/accountButtonStyle"
+            android:layout_marginLeft="4dp"
+            android:background="@color/orange"
+            android:text="@string/btn_send" />
+
+        <Button
+            android:id="@+id/btn_bind"
+            style="@style/accountButtonStyle"
+            android:layout_marginLeft="4dp"
+            android:background="@color/cornflowerblue"
+            android:text="@string/btn_bind" />
+    </LinearLayout>
+
+</RelativeLayout>
